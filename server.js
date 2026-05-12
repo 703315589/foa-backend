@@ -27,11 +27,11 @@ const generateQr = require('./routes/generate-qr');
 app.use('/api/payment-link', paymentRoutes);
 app.use('/api/generate-qr', generateQr);
 app.get("/", (req, res) => {
-  res.send("Deployed version v2 🚀");
+  res.send("Deployed version v2 🚀 on branch dev");
 });
 
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 server.listen(PORT,'0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
