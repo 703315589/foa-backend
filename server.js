@@ -27,7 +27,7 @@ const generateQr = require('./routes/generate-qr');
 app.use('/api/payment-link', paymentRoutes);
 app.use('/api/generate-qr', generateQr);
 app.get("/", (req, res) => {
-  res.send("Deployed version v2 🚀 on branch dev flkjdklfjd");
+  res.send("Deployed version v2 🚀 on branch dev test");
 });
 
 
